@@ -1,4 +1,3 @@
-<!--suppress ALL -->
 <template>
   <div class="content">
     <div class="mid">
@@ -550,15 +549,15 @@ export default {
         const element = document.querySelector('.list-group1').childNodes
         // 获取当前点击的元素改变边框样式
         for (let i = 0; i < element.length; i += 1) {
-          element[i].style.border = '0 solid #DFDFDF'
+          element[i].style.border = '1px solid rgb(223, 223, 223)'
         }
-        element[index].style.border = '1px solid #9EA7FF'
+        element[index].style.border = '1px solid rgb(158, 167, 255)'
         // 获取所有明细的元素
         const element1 = document.querySelectorAll('.list-group2')
         if (element1.length > 0) {
           for (let i = 0; i < element1.length; i += 1) {
             for (let j = 0; j < element1[i].length; j += 1) {
-              element1[i][j].style.border = '0 solid #DFDFDF'
+              element1[i][j].style.border = '1px solid rgb(223, 223, 223)'
             }
           }
         }
@@ -573,9 +572,9 @@ export default {
         const element = document.querySelector('.list-group1').childNodes
         // 获取当前点击的元素改变边框样式
         for (let i = 0; i < element.length; i += 1) {
-          element[i].style.border = '0 solid #DFDFDF'
+          element[i].style.border = '1px solid rgb(223, 223, 223)'
         }
-        element[index].style.border = '1px solid #9EA7FF'
+        element[index].style.border = '1px solid rgb(158, 167, 255)'
         this.handleSelect(index)
         this.flog.in = false
         this.flog.out = true
@@ -616,7 +615,7 @@ export default {
         const element = document.querySelector('.list-group1').childNodes
         // 获取当前点击的元素改变边框样式
         for (let i = 0; i < element.length; i += 1) {
-          element[i].style.border = '0 solid #DFDFDF'
+          element[i].style.border = '1px solid rgb(223, 223, 223)'
         }
         // 获取所有明细的元素
         const element1 = document.querySelectorAll('.list-group2')
@@ -626,11 +625,11 @@ export default {
         const MxArr = element1[MXindex].childNodes
         // 遍历数组找到点击添加的元素改变样式
         for (let i = 0; i < MxArr.length; i += 1) {
-          MxArr[i].style.border = '0 solid #DFDFDF'
+          MxArr[i].style.border = '1px solid rgb(223, 223, 223)'
         }
-        MxArr[this.rightIndex2].style.border = '1px solid #9EA7FF'
+        MxArr[this.rightIndex2].style.border = '1px solid rgb(158, 167, 255)'
         if (MxArr.length <= 0) {
-          element[this.rightIndex].style.border = '1px solid #9EA7FF'
+          element[this.rightIndex].style.border = '1px solid rgb(158, 167, 255)'
         }
         this.flog.in = true
         this.flog.out = false
@@ -640,7 +639,7 @@ export default {
         const element = document.querySelector('.list-group1').childNodes
         // 获取当前点击的元素改变边框样式
         for (let i = 0; i < element.length; i += 1) {
-          element[i].style.border = '0 solid #DFDFDF'
+          element[i].style.border = '1px solid rgb(223, 223, 223)'
         }
         // 获取所有明细的元素
         const element1 = document.querySelectorAll('.list-group2')
@@ -650,13 +649,13 @@ export default {
         const MxArr = element1[MXindex].childNodes
         // 遍历数组找到点击添加的元素改变样式
         for (let i = 0; i < MxArr.length; i += 1) {
-          MxArr[i].style.border = '0 solid #DFDFDF'
+          MxArr[i].style.border = '1px solid rgb(223, 223, 223)'
         }
         const index = event.moved.newIndex
         this.rightIndex2 = index
-        MxArr[this.rightIndex2].style.border = '1px solid #9EA7FF'
+        MxArr[this.rightIndex2].style.border = '1px solid rgb(158, 167, 255)'
         if (MxArr.length <= 0) {
-          element[this.rightIndex].style.border = '1px solid #9EA7FF'
+          element[this.rightIndex].style.border = '1px solid rgb(158, 167, 255)'
         }
         this.flog.in = true
         this.flog.out = false
@@ -701,14 +700,14 @@ export default {
       const element1 = document.querySelector('.list-group1').childNodes
       // 获取当前点击的元素改变边框样式
       for (let i = 0; i < element1.length; i += 1) {
-        element1[i].style.border = '0 solid #DFDFDF'
+        element1[i].style.border = '1px solid rgb(223, 223, 223)'
       }
-      element1[index].style.border = '1px solid #9EA7FF'
+      element1[index].style.border = '1px solid rgb(158, 167, 255)'
       if (this.IsMx.length > 0) {
         const element2 = document.querySelectorAll('.list-group2')
         for (let i = 0; i < element2.length; i += 1) {
           for (let j = 0; j < element2[i].childNodes.length; j += 1) {
-            element2[i].childNodes[j].style.border = '0 solid #DFDFDF'
+            element2[i].childNodes[j].style.border = '1px solid rgb(223, 223, 223)'
           }
         }
       }
@@ -765,7 +764,7 @@ export default {
       const element = document.querySelector('.list-group1').childNodes
       // 获取当前点击的元素改变边框样式
       for (let i = 0; i < element.length; i += 1) {
-        element[i].style.border = '0 solid #DFDFDF'
+        element[i].style.border = '1px solid rgb(223, 223, 223)'
       }
       // 获取所有明细的元素
       const element1 = document.querySelectorAll('.list-group2')
@@ -775,9 +774,9 @@ export default {
       const MxArr = element1[MXindex].childNodes
       // 遍历数组找到点击添加的元素改变样式
       for (let i = 0; i < MxArr.length; i += 1) {
-        MxArr[i].style.border = '0 solid #DFDFDF'
+        MxArr[i].style.border = '1px solid rgb(223, 223, 223)'
       }
-      MxArr[this.rightIndex2].style.border = '1px solid #9EA7FF'
+      MxArr[this.rightIndex2].style.border = '1px solid rgb(158, 167, 255)'
       this.flog.in = true
       this.flog.out = false
       this.display = item
@@ -802,7 +801,7 @@ export default {
       const element = document.querySelector('.list-group1').childNodes
       // 获取当前点击的元素改变边框样式
       for (let i = 0; i < element.length; i += 1) {
-        element[i].style.border = '0px solid rgb(223, 223, 223)'
+        element[i].style.border = '1px solid rgb(223, 223, 223)'
       }
       event.path[8].style.border = '1px solid rgb(158, 167, 255)'
       this.display = this.midList[this.rightIndex]
@@ -894,16 +893,16 @@ export default {
     },
     // 获取被点击的元素的位置加上class
     mouseEnterForm(event) {
-      window.event?window.event.cancelBubble=true:event.stopPropagation()
+      window.event ? window.event.cancelBubble = true : event.stopPropagation()
       if (event.target.style.border !== '1px solid rgb(158, 167, 255)') {
         event.target.style.border = '1px dashed rgb(56, 173, 255)'
       }
       event.target.children[0].firstChild.style.display = 'block'
     },
     mouseleaveForm(event) {
-      window.event?window.event.cancelBubble=true:event.stopPropagation()
+      window.event ? window.event.cancelBubble = true : event.stopPropagation()
       if (event.target.style.border !== '1px solid rgb(158, 167, 255)') {
-        event.target.style.border = '0px solid rgb(223, 223, 223)'
+        event.target.style.border = '1px solid rgb(223, 223, 223)'
       }
       event.target.children[0].firstChild.style.display = 'none'
     }
@@ -917,6 +916,7 @@ export default {
     width: 100%;
     overflow: hidden;
     background: rgba(128, 128, 128, 0.47);
+    font-family: PingFangSC-Regular;
     .left{
       float: left;
       width: 270px;
@@ -938,7 +938,11 @@ export default {
           box-sizing: border-box;
           padding-left: 8px;
           cursor: move;
-          color: #191f25;
+          font-family: PingFangSC-Regular;
+          font-size: 12px;
+          color: #4E5467;
+          letter-spacing: 0;
+          text-align: left;
           background: #FFFFFF;
           border: 1px solid #DFDFDF;
           border-radius: 2px;
@@ -972,7 +976,7 @@ export default {
             height: calc(100% - 18px);
             margin:9px;
             background: #FFFFFF;
-            border: 1px solid #9EA7FF;
+            border: 1px solid rgb(158, 167, 255);
             span{
               float: left;
               font-size: 14px;
@@ -1025,6 +1029,10 @@ export default {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                color: #4E5467;
+                letter-spacing: 0;
               }
               .rightDes{
                 float: right;
@@ -1037,6 +1045,11 @@ export default {
                 overflow: hidden;
                 color: rgba(128, 122, 121, 0.36);
                 text-overflow: ellipsis;
+                font-family: PingFangSC-Regular;
+                font-size: 14px;
+                color: #9CA0AA;
+                letter-spacing: 0;
+                text-align: right;
               }
               .midStyle2{
                 position: relative;
@@ -1077,6 +1090,11 @@ export default {
                   white-space: nowrap;
                   overflow: hidden;
                   text-overflow: ellipsis;
+                  font-family: PingFangSC-Regular;
+                  font-size: 14px;
+                  color: #4E5467;
+                  letter-spacing: 0;
+                  text-align: left;
                 }
                 .rightDes{
                   float: right;
@@ -1089,6 +1107,11 @@ export default {
                   overflow: hidden;
                   color: rgba(128, 122, 121, 0.36);
                   text-overflow: ellipsis;
+                  font-family: PingFangSC-Regular;
+                  font-size: 14px;
+                  color: #9CA0AA;
+                  letter-spacing: 0;
+                  text-align: right;
                 }
               }
             }
@@ -1110,10 +1133,19 @@ export default {
         border-bottom: 1px solid #e1e1e1;
         padding: 10px 0 10px 10px;
         font-weight: bold;
+        font-family: PingFangSC-Regular;
+        font-size: 16px;
+        color: #4E5467;
+        letter-spacing: 0;
       }
       .right-list-in{
         font-weight: bold;
         padding: 20px 0 10px 10px;
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #4E5467;
+        letter-spacing: 0;
+        text-align: left;
       }
       .right-list-tip{;
         font-size: 13px;
@@ -1145,33 +1177,6 @@ export default {
   }
 </style>
 <style>
-  .chosenClass{
-    float: left;
-    width: 99%;
-    border: 1px solid red;
-    margin-bottom: 15px;
-    height: 45px;
-    line-height: 45px;
-    cursor: move;
-    font-size: 14px;
-    padding-left: 15px;
-    background: white;
-    box-sizing: border-box;
-  }
-  .chooseSelect{
-    width: 88%;
-    height: 40px;
-    border: 1px solid rgba(128,128,128,0.44);
-    margin-left: 10px;
-    padding-left: 10px;
-    line-height: 40px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .sortable-chosen{
-    border: 1px solid red!important;
-  }
   .clearfix{
     *zoom: 1;
   }

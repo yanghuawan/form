@@ -26,6 +26,10 @@ import Base from '../components/Dragger/mixin/Base'
 import Form from '../components/Dragger/mixin/Form'
 import Process from '../components/Dragger/mixin/Process'
 
+// 工作台
+import LeftMenu from '../components/Workbench/LeftMenu'
+import RightMenu from '../components/Workbench/RightMenu'
+
 
 Vue.use(Router)
 
@@ -78,7 +82,7 @@ export default new Router({
       path: '/dragger',
       name: 'Dragger',
       component: Dragger,
-      redirect: '/dragger/base',
+      redirect: '/dragger/form',
       children: [
         { path: 'base',
           name: 'Base',
@@ -89,6 +93,17 @@ export default new Router({
         { path: 'process',
           name: 'Process',
           component: Process }
+      ]
+    },
+    {
+      path: '/LeftMenu',
+      name: 'LeftMenu',
+      component: LeftMenu,
+      redirect: '/LeftMenu/RightMeun',
+      children: [
+        { path: 'RightMeun',
+          name: 'RightMeun',
+          component: RightMenu }
       ]
     }
   ]
