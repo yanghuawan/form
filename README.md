@@ -1,6 +1,6 @@
 # admin-project
 
-> this is a first project
+> this is a first commit
 
 ## Build Setup
 
